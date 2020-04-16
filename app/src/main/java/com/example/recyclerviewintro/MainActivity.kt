@@ -17,8 +17,10 @@ class MainActivity : AppCompatActivity() {
 
         recyclerView.layoutManager = LinearLayoutManager(this)
 
+        // konstruera en adapter från vår adapter-klass, skicka med vår data
         val adapter = PersonRecycleAdapter(this, persons)
 
+        //koppla ihop vår adapter med recyclerview:n
         recyclerView.adapter = adapter
     }
 }
